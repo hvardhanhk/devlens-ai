@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         '/api/anthropic': {
           target: 'https://api.anthropic.com',
+          // Proxy requests to the Anthropic API
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api\/anthropic/, ''),
           headers: {
