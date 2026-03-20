@@ -83,13 +83,6 @@ case "APPEND_CONTENT": {
   return { ...state, streamedContent: newContent, issueCount: { critical, ... }, score };
 }
 ```
-
-## Resume Talking Points
-
-- *"Built a streaming LLM integration using the Anthropic Claude API with SSE parsing and AbortController for clean request lifecycle management"*
-- *"Designed a multi-mode AI analysis system using useReducer for predictable state transitions — no Redux or Zustand required"*
-- *"Implemented real-time issue counting and score extraction synchronized with streaming token delivery"*
-
 ## License
 
 MIT
