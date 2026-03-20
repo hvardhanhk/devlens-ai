@@ -210,6 +210,8 @@ function useStreamingAnalysis(state, dispatch) {
         headers: {
           "Content-Type": "application/json",
           "anthropic-dangerous-direct-browser-access": "true",
+          "x-api-key": process.env.ANTHROPIC_API_KEY,
+          "anthropic-version": "2023-06-01",
         },
         signal: abortRef.current.signal,
         body: JSON.stringify({
